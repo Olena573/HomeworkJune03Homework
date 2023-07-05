@@ -33,14 +33,14 @@ public class MainClass {
         //Here is a usage of the getLast () method:
         System.out.println("Here is a last element: " + array.getLast());
 
-        //Here is a usage of the addGirst () method:
-      //  array.addLast (45);
+        //Here is a usage of the addFirst () method:
+      array.addFirst (45);
 
         for (int i = 0; i <array.size(); i++){
-            System.out.println(array.get(i));
+            System.out.println("Here is a test of the addFirst method: "+ array.get(i));
         }
 
-        array.addFirst(12);
+        //  array.addFirst(12);
 
     }
 }

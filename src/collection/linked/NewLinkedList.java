@@ -6,6 +6,7 @@ import java.util.Objects;
 public class NewLinkedList <Element>{
     // Here is a class for the task 1 of the Homework.
     private Node <Element> first;
+
     private Node <Element> last;
 
     private int size = 0;
@@ -22,6 +23,17 @@ public class NewLinkedList <Element>{
         }
         last = node;
         size++;
+    }
+
+    public void addFirst (Element element){
+        //This is the addFirst Method;
+        Node newNode = new Node <> (element, null, null);
+        newNode.next = first;
+        first = newNode;
+        size++;
+        if (first.next == null){
+            last = first;
+        }
     }
 
 
